@@ -1,0 +1,59 @@
+<!DOCtype html>
+<html>
+<head>
+	<title>電卓</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://smtpjs.com/v2/smtp.js"></script>
+</head>
+	<body>
+		<div class="content">
+			<h2 class="section-title">課題1：電卓</h2>
+			<form name="form">
+			    <input type="text" name="textName" value="" class="text-form" placeholder="0">
+			    <br>
+			    <input type="button" value=" 7 " onClick="calc('7')" class="btn dark">
+			    <input type="button" value=" 8 " onClick="calc('8')" class="btn dark">
+			    <input type="button" value=" 9 " onClick="calc('9')" class="btn dark">
+			    <input type="button" value=" ÷ " onClick="calc('/')" class="btn">
+			    <input type="button" value=" C " onClick="calc('C')"" class="btn cancel">
+			    <br>
+			    <input type="button" value=" 4 " onClick="calc('4')" class="btn dark">
+			    <input type="button" value=" 5 " onClick="calc('5')" class="btn dark">
+			    <input type="button" value=" 6 " onClick="calc('6')" class="btn dark">
+			    <input type="button" value=" × " onClick="calc('*')" class="btn">
+			    <br>
+			    <input type="button" value=" 1 " onClick="calc('1')" class="btn dark">
+			    <input type="button" value=" 2 " onClick="calc('2')" class="btn dark">
+			    <input type="button" value=" 3 " onClick="calc('3')" class="btn dark">
+			    <input type="button" value=" - " onClick="calc('-')" class="btn">
+			    <br>
+			    <input type="button" value=" 0 " onClick="calc('0')" class="btn dark">
+			    <input type="button" value=" . " onClick="calc('.')" class="btn dark">
+			    <input type="button" value=" = " onClick="calc('=')" class="btn last-btn">
+			    <input type="button" value=" + " onClick="calc('+')" class="btn">
+			    <br>
+			</form>
+			<form class="mail-form">
+				<h2 class="section-title">課題3：計算情報の共有</h2>
+				<p class="form-title">計算情報(計算過程と計算結果)をメールで送る⬇︎</p>
+			    <input type="input" name="email" onClick="send('go')" class="mail-input" placeholder="email" >
+			    <input type="submit" name="" value="送信する" class="submit-btn">
+			</form>
+		</div>
+		<div class="content">
+			<form name="form2">
+				<h2 class="section-title title-second">課題2：三角関数</h2>
+				<p class="section-info">2次元平面の座標(x,y)を原点(0,0)から<br>一定の角度(θ)を回した回転後の座標(x',y')</p>
+				<span class="input-title">x座標</span><input type="number" name="x1Name" class="input-number">
+				<span class="input-title">y座標</span><input type="number" name="y1Name"class="input-number">
+				<span class="input-title">角度(θ)</span><input type="number" name="θ" class="input-number">
+				<input type="button" value="計算する" onClick="rotate('cal')" class="calc-btn">
+				<p class="calc-result">計算結果</p>
+				<span class="input-title">x'座標</span><input type="number" name="x2Name" value="" class="x'-number">
+				<br>
+				<span class="input-title">y'座標</span><input type="number" name="y2Name" value="" class="y'-number">
+			</form>
+		</div>
+	</body>
+</html>
